@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jake Russell -- Developer -- @jakerussellcs
 
 # THANKS
 
-    <name>
+    Thanks to the fam!
 
 # TECHNOLOGY COLOPHON
 
+    Django
     HTML5, CSS3
     jQuery, Modernizr
+    Twitter Bootstrap
