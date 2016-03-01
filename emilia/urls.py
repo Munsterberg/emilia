@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from .views import home, home_files
+from .views import home, home_files, login
 
 urlpatterns = [
     url(r'^$', home, name='home'),
+    url(r'^login/', login, name='login'),
     url(r'^(?P<filename>(robots.txt)|(humans.txt))$', home_files, name='home-files'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -16,7 +16,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
 
     def test_home_title(self):
         self.browser.get(self.get_full_url("home"))
-        self.assertIn('Emilia', self.browser.title)
+        self.assertIn('Home', self.browser.title)
 
     def test_h1_css(self):
         self.browser.get(self.get_full_url("home"))
@@ -28,3 +28,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
         self.assertNotIn("Not Found", self.browser.title)
         self.browser.get(self.live_server_url + '/humans.txt')
         self.assertNotIn("Not Found", self.browser.title)
+
+    def test_login_title(self):
+        self.browser.get(self.get_full_url("login"))
+        self.assertIn('Login', self.browser.title)
